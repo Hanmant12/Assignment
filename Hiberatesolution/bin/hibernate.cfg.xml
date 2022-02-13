@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sample</property>
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">Hanmant@1997</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+ <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+<!-- <mapping class="operation.Examdepartment"/> -->
+<!-- <mapping class="Mapping.One"/>
+<mapping class="Mapping.Two"/> -->
+<!-- <mapping class="Mappingonetoone.Collage"/>
+<mapping class="Mappingonetoone.Std"/> -->
+<mapping class="Embeddedexample.Tyre"/>
+<mapping class="Embeddedexample.Type"/>
+
+<!-- <mapping class="hibernateoperation.Std"/>
+
+
+<mapping class="embeddableannota.Course"/>
+
+<mapping class="relationship.Laptop"/>
+
+<mapping class="relationship.Servicer"/> -->
+</session-factory></hibernate-configuration>
