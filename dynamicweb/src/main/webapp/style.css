@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+#h{
+	color:red;
+	background-color:pink;
+	font-size:30px;
+	border: 5px double red;
+	text-shadow:aquao;
+}
+
+@keyframes show{
+	
+	from { background-color:red ;height:100px;}
+	to  { background-color:blue ;height:200px;}
+}
+.abc{
+	 color:pink;
+	 animation-name:show;
+	 animation-duration:30s;
+	 animation-delay:5s;
+	 animation-direction:reverse;
+	 height:100px;
+	 width:500px;
+	text-align:center;
+	 border: 2px solid red;
+	
+}
