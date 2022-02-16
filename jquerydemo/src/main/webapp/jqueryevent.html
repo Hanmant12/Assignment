@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("p").load(function(){
+		alert("welcome");
+	});
+});
+
+
+$(document).ready(function(){
+	$("p").dblclick(function(){
+	$("#e").hide();
+	});
+});
+
+$(document).ready(function(){
+	$("p").mouseleave(function(){
+	$("#k").text("hi how are you");
+	});
+});
+
+
+$(document).ready(function(){
+	$("button").submit(function(){
+	$("h5").hide();
+	});
+});
+
+
+$(document).ready(function(){
+	$("div").mouseup(function(){
+	$("h1").empty();
+	});
+});
+
+
+</script>
+
+<body>
+<h1>hello</h1>
+<div>mouse move</div>
+<p> how are yoy<p>
+<p id="e">dbclick to hide me</p>
+<p id="k">mouseleave</p>
+<h5>hide me</h5>
+<button> click to hide</button>
+</body>
+</html>

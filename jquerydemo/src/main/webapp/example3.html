@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("p").click(function(){
+		$("p").html("h1");
+	});
+	
+	$("div").click(function(){
+		$("div").attr("color", "red");
+	});
+	
+	
+	
+});
+$(document).ready(function(){
+	$("div").click(function(){
+		$("div").remove();
+		
+	});
+	$("h4").click(function(){
+		$("k").append("i am append");
+		
+	});
+	
+	
+	
+});
+
+$(document).ready(function(){
+	$("h4").click(function(){
+		$("h4").append("<h4>i am after</h4>");
+		$("h4").before("<h4>i am before</h4>");
+		
+	});
+	
+	
+	
+});
+
+
+</script>
+</head>
+<body>
+<p>click me paragraph</p>
+<div> i am div</div>
+<h4 id="k"> i am div append</h4>
+</body>
+</html>

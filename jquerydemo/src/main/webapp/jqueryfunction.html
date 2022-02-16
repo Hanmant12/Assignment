@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	$("p").click(function(){
+	
+		 $("p").html("<h1>hello</h1>"); 
+		$("p").after("<h1>hello</h1>"); 
+	});
+	
+	
+});
+
+
+
+$(document).ready(function(){
+	$("h1").click(function(){
+	
+		 $("h1").remove(); 
+		
+	});
+	
+	
+});
+
+
+
+$(document).ready(function(){
+	$("div").click(function(){
+	
+		 $("div").empty(); 
+		
+		
+	});
+	
+	
+});
+
+
+$(document).ready(function(){
+	$("h2").click(function(){
+	
+		 $(".c1").empty(); 
+		
+		
+	});
+	
+	
+});
+
+
+$(document).ready(function(){
+	$("button").click(function(){
+	
+		 $("input:text").val("how are you"); 
+		 $("#i").append("<h1>good</h1>");
+		$("body").attr("bgcolor","red");
+		$("h5").text("i ma h5");
+	});
+	
+	
+});
+
+
+
+</script>
+</head>
+<body>
+<p>welcome to jquery</p>
+<h1>hi</h1>
+<div>hi am div</div>
+
+<h2 class='c1'>how are you</h2>
+<h2 class='c1'>how are you h2</h2>
+<input type="text" value="hdd">
+<h3 id="i"> i am h3</h3>
+<h5> i am</h5>
+<button>great</button>
+</body>
+</html>
