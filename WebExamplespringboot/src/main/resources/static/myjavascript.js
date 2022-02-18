@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+ 
+function javas()
+{
+	
+	alert("welcome");
+}
+ 
