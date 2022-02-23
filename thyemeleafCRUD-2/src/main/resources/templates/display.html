@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(pic.JFIF);background-repeat:no-repeat;">
+<br>
+<div class="btn btn-success" style="float:left;"><a th:href="@{/loademptyform}">Add Record</a></div> 
+<div class="col-md-4"></div> 
+ <div class="col-md-4"> 
+<table class="table table-bordred table-hover" >
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>delete</th>
+ <th >update</th>
+
+
+</tr>
+<tr th:each="t:${exa}">
+<td th:utext="${t.id}"></td>
+<td th:utext="${t.name}"></td>
+<td><a th:href="@{/del1{id}(id=${t.id})}" class="btn btn-danger">delete</a></td>
+
+<td><a th:href="@{/loademptyform(id=${t.id})}" class="btn btn-success">update</a></td>
+</tr>
+
+
+</table>
+</div>
+</body>
+</html>
