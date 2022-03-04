@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+
+.k{
+
+background-color:lavender;
+border:2px dashed red;
+box-shadow:10px 10px 10px green ;/* internal */
+width:300px;
+height:300px;
+overflow:auto;
+resize:both;
+}
+
+h1{
+color: red; background-color: pink;
+}
+
+body{
+	background-image: url("img/download.JFIF");
+	background-repeat: no-repeat;
+	background-color: gray;
+	
+	
+}
